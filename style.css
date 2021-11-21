@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+body {
+	font-family: 'Balsamiq Sans', cursive;
+}
+.container {
+  background: #dde1e7;
+  width: 320px;
+  height: 550px;
+  border-radius: .5em;
+  box-shadow: #6d1111;
+  margin: 0 auto;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.container .result {
+  width: 100%;
+  height: 150px;
+  box-shadow: #6d1111;
+  
+}
+.container .result p {
+  font-size: 40pt;
+  overflow-y: auto;
+  text-align: right;
+
+}
+
+.container .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+}
+
+.container .buttons .button, .container .buttons .num-button  {
+  cursor: grab;
+  text-align: center;
+  width: 60px;
+  font-size:18px;
+  height: 60px;
+  display: grid;
+  place-content: center;
+  border-radius: 20%;
+  box-shadow: #6d1111;
+  box-shadow: 2px 2px 5px #babecc;
+}
+
+.container .buttons .zero ,.container .buttons .ac {
+  grid-column: 1/ 3;
+  width: 100%;
+  font-size:18px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #babecc;
+}
+
+.button:hover{
+	color: #ce1c43;
+   
+}
+
+.action-btn {
+  color: grey;
+  font-weight: bold;
+}
+.calc-action-btn{
+  color: #a8101d;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.background{
+	background-color:#ffffff
+}
+
+/* History */
+.history {
+	width: 320px;
+  	height: 550px;
+	margin: 0 auto;
+	background-color: #5c1117;
+}
+
+.screen {
+	display: flex;
+	flex-flow: column nowrap;
+	background-color: #47060c;
+	min-height: 80px;
+	padding: 10px;
+	font-size: 2.5rem;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: right;
+}
